@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-container">
+        <div class="break-session-length">
+          <div class="break-length">
+            <div class="break-text">BREAK LENGTH</div>
+            <div class="break-length-input">
+              <button id="break-btn-minus" class="length-btn">-</button>
+              <p class="break-num">5</p>
+              <button id="break-btn-plus" class="length-btn">+</button>
+            </div>
+          </div>
+          <div class="session-length">
+            <div class="session-text">SESSION LENGTH</div>
+            <div class="session-length-input">
+              <button id="session-btn-minus" class="length-btn">-</button>
+              <p class="session-num">25</p>
+              <button id="session-btn-plus" class="length-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="session">Session</div>
+          <button class="start">Start</button>
+          <div id="timerCount">25:00</div>
+        </div>
+        <div class="pause-btn"><button>Pause</button></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
